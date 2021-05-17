@@ -137,3 +137,6 @@ app.post('/runcam', function(req, res){
     如此便接近成功，啟動網頁來看看成果．
     <video controls="controls" width="300"
                     name="Video Name" src="./cv2_face_detect.mov"></video>
+
+https://user-images.githubusercontent.com/50975121/118422084-175ac700-b6f5-11eb-8f68-fecac573b4ee.mov
+
