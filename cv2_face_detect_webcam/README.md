@@ -130,3 +130,5 @@ app.post("/getImage", function(req, res) {
     啟動網頁來看看成果，可以觀察到時間差由0.6秒增加到到1.多看來不是很理想，下次繼續優化時間差的版本<br>
     <video controls="controls" width="300"
                     name="Video Name" src="./cv2_face_detect_webcam.mov"></video>
+
+https://user-images.githubusercontent.com/50975121/118421948-c64ad300-b6f4-11eb-8842-21423fa4ce9f.mov
