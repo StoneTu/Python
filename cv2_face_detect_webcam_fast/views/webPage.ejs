@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/_js/webcam.min.js"></script>
+    <style>
+        .frame {
+            width: 640px;
+            height: 480px;
+            border: 0;
+            -ms-transform: scale(0.5);
+            -moz-transform: scale(0.5);
+            -o-transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+
+            -ms-transform-origin: 0 0;
+            -moz-transform-origin: 0 0;
+            -o-transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+    </style>
+</head>
+<body>
+    <button id="startCamBtn">Start Camera</button>
+    <button id="okButton">Send Image</button>
+    <div id="otherCamDiv">
+        <iframe class = "frame" src="http://192.168.1.103:8000" width="320" height="240" style="border:none;"></iframe>
+    </div>
+    <div id="cameraDiv"></div>
+
+    <hr>
+    <div>
+        <img id="displayImg" src="" alt="">
+        <p id="displayText"></p>
+    </div>
+    <script src="/_js/webcamPage.js"></script>
+</body>
+</html>
