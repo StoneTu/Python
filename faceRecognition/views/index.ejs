@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>III AI Driver Monitor System</title>
+    <link rel="stylesheet" href="./stylesheets/styleLogin.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/socket.io/4.0.1/socket.io.js"></script>
+    <script src="/js/webcamMobile.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login">
+            <div>
+                <p class="title">駕駛行為偵測系統DMS</p>
+            </div>
+            <div class="tab">
+                <button class="tablinks active" id="signinTab">Log in</button>
+                <button class="tablinks" id="signupTab">Sign up</button>
+            </div>
+        <form id="signinForm">
+            <!-- <input type="text" placeholder="Username" autofocus/>
+            <i class="fa fa-user"></i>
+            <input type="password" placeholder="Password" />
+            <i class="fa fa-key"></i> -->
+            <div id='webcamDiv'>
+                <img class="icon" src="./images/faceLoginIcon.png" alt="" srcset="">
+            </div>
+            <button class="bottom" id="faceLogin">
+                <i class="spinner"></i>
+                <span class="state" id="signinText">Face Log in</span>
+            </button>
+        </form>
+        <form class="tabcontent" id="signupForm">
+            <input id="userName" type="text" placeholder="Username" autofocus/>
+            <i class="fa fa-user"></i>
+            <div id='webcamDiv2'>
+                <img class="icon" src="./images/faceLoginIcon.png" alt="" srcset="">
+            </div>
+            <button class="bottom" id="faceSignup">
+                <i class="spinner"></i>
+                <span class="state" id="signupText">Face Sign Up</span>
+            </button>
+        </form>
+    </div>
+    </div>
+    <%- include('partial/footer') %>
+    <script src="./js/loginScript.js"></script>
+</body>
+</html>
